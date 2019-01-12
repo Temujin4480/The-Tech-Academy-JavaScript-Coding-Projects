@@ -1,0 +1,143 @@
+
+body, html {
+	height: 100%;
+	margin: 0;
+}	
+
+
+.bg {	
+	background-image: url("../images/Thanos_Pizza.jpg");
+	height: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.container {
+	text-align: center;
+    vertical-align: middle;
+	margin-top: 2%;
+}
+
+.menu {
+	margin: 20px 30px 20px;
+}
+
+.controls {
+	margin: -20px 0px 20px 30px;
+	display: flex;
+	flex-direction: columns;
+}
+
+.button {
+	cursor: pointer;
+	background-color: #555555; /* Black */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 12px;
+	font-size: 2em;
+}
+
+//*copied from example*//
+
+		
+#totalPrice {
+	width:200px;height:190px;margin:0 auto;float:right;
+}
+
+#showText {
+	width:200px;height:190px;margin:0px auto;float:left;
+}
+		
+#cart {
+	opacity: 0;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(244, 245, 247, 0.9);
+	border: 2px solid #080054;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+	border-radius: 25px;
+}
+
+#title1 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: #555;
+	border-radius: 25px 0 0 0;
+}
+
+#title2 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: #555;
+	border-radius: 0 25px 0 0;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+
+
+//*end copied from example*//
+
+//*don't think these are relevant to my html, but were in example
+.left {
+		width:200px;height:200px;float:left;
+}
+	
+.right {
+	width:200px;height:200px;float:right;
+}
+
+#btnOrder {
+	margin:10px 0px 0px 100px;width:100px;height:40px
+}
+
+#frmMenu {
+	width:400px;height:200px;
+}
+*//
+
