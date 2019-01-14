@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>NBA All Star Voting</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="./NBA_All_Stars_Stylesheet.css">
+		
+		
+	</head>
+	<body>
+	
+		<section id="order_form">
+			<div class="container">
+				<h1>NBA All Star Voting: Choose 2 guards and 3 forwards from each conference</h1><br><br>
+				<h1>Eastern Conference: </h1><br>
+				
+				<form id="frmMenu">
+				<div class="menu">
+					<h3>Guards</h3>
+					<p>Choose Two:</p>
+						<input class="Eguard" type="checkbox" name="Eguard" value="Kyrie Irving" >Kyrie Irving</input>&nbsp&nbsp
+						<input class="Eguard" type="checkbox" name="Eguard" value="Kemba Walker" >Kemba Walker</input>&nbsp&nbsp
+						<input class="Eguard" type="checkbox" name="Eguard" value="Ben Simmons" >Ben Simmons</input>&nbsp&nbsp
+						<input class="Eguard" type="checkbox" name="Eguard" value="Victor Oladipo" >Victor Oladipo</input>&nbsp&nbsp
+						<input class="Eguard" type="checkbox" name="Eguard" value="Kyle Lowry" >Kyle Lowry</input>&nbsp&nbsp<br><br>
+					
+					<h3>Forwards</h3>
+					<p>Choose Three:</p>
+						<input class="Eforward" type="checkbox" name="Eforward" value="Giannis Antetokounmpo" >Giannis Antetokounmpo</input>&nbsp&nbsp
+						<input class="Eforward" type="checkbox" name="Eforward" value="Kawhi Leonard" >Kawhi Leonard</input>&nbsp&nbsp
+						<input class="Eforward" type="checkbox" name="Eforward" value="Joel Embiid" >Joel Embiid</input>&nbsp&nbsp
+						<input class="Eforward" type="checkbox" name="Eforward" value="Jayson Tatum" >Jayson Tatum</input>&nbsp&nbsp
+						<input class="Eforward" type="checkbox" name="Eforward" value="Jimmy Butler" >Jimmy Butler</input>&nbsp&nbsp
+						<input class="Eforward" type="checkbox" name="Eforward" value="Blake Griffin" >Blake Griffin</input>&nbsp&nbsp
+						<input class="Eforward" type="checkbox" name="Eforward" value="Nikola Vucevic" >Nikola Vucevic</input>&nbsp&nbsp<br><br><br><br>
+				</div>
+				
+				<h1>Western Conference: </h1><br>
+				
+				<div class="menu">
+					<h3>Guards</h3>
+					<p>Choose Two:</p>
+						<input class="Wguard" type="checkbox" name="Wguard" value="Stephen Curry" >Stephen Curry</input>&nbsp&nbsp
+						<input class="Wguard" type="checkbox" name="Wguard" value="Damian Lillard" >Damian Lillard</input>&nbsp&nbsp
+						<input class="Wguard" type="checkbox" name="Wguard" value="James Harden" >James Harden</input>&nbsp&nbsp
+						<input class="Wguard" type="checkbox" name="Wguard" value="Russell Westbrook" >Russell Westbrook</input>&nbsp&nbsp
+						<input class="Wguard" type="checkbox" name="Wguard" value="Demar DeRozan" >Demar DeRozan</input>&nbsp&nbsp<br><br>
+					
+					
+					
+					<h3>Forwards</h3>
+					<p>Choose Three:</p>
+						<input class="Wforward" type="checkbox" name="Wforward" value="Lebron James" >Lebron James</input>&nbsp&nbsp
+						<input class="Wforward" type="checkbox" name="Wforward" value="Kevin Durant" >Kevin Durant</input>&nbsp&nbsp
+						<input class="Wforward" type="checkbox" name="Wforward" value="Anthony Davis" >Anthony Davis</input>&nbsp&nbsp
+						<input class="Wforward" type="checkbox" name="Wforward" value="Paul George" >Paul George</input>&nbsp&nbsp
+						<input class="Wforward" type="checkbox" name="Wforward" value="Nikola Jokic" >Nikola Jokic</input>&nbsp&nbsp
+						<input class="Wforward" type="checkbox" name="Wforward" value="Luka Doncic" >Luka Doncic</input>&nbsp&nbsp
+						<input class="Wforward" type="checkbox" name="Wforward" value="Karl Anthony Towns" >Karl Anthony Towns</input>&nbsp&nbsp<br><br>	
+				</div>		
+				
+				<!-- Buttons -->
+				<div class="controls">
+					<div class="button" onclick="submitPicks()">
+						<h3>Submit</h3>
+					</div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<div class="button" onclick="clearAll()">
+						<h3>Start Over</h3>
+					</div>
+				</div>
+				<br><br>
+				<!-- /Buttons -->				
+				
+				<!-- Ballot -->
+				<div id="cart">
+					<div id="title1"><h2>Your ballot:</h2></div>
+					<div id="title2"><h3>Eastern Conference:</h3></div>
+					<div id="title3"><h3>Western Conference:</h3></div>
+					<div id="showText1"></div>
+					<div id="showText2"></div>
+				</div>
+			
+			</form>
+			<br><br>
+			
+			</div>
+		</section>
+		
+	
+	<script src="./NBA_All_Stars_JS.js"></script>
+	</body>
+</html>
